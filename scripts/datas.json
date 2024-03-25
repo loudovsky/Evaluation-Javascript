@@ -1,8 +1,8 @@
 {
   "matchs": [
     {
-      "hometeam": "Kvc westerlo",
-      "awayteam": "Standard de liège",
+      "hometeam": "KVC Westerlo",
+      "awayteam": "Standard de Liège",
       "date": "2024-02-16",
       "time": "20:45",
       "home_odd": 3.2,
@@ -11,7 +11,7 @@
       "match_id": 1
     },
     {
-      "hometeam": "Krc genk",
+      "hometeam": "KRC Genk",
       "awayteam": "RWDM",
       "date": "2024-02-17",
       "time": "16:00",
@@ -21,8 +21,8 @@
       "match_id": 2
     },
     {
-      "hometeam": "Oud-heverlee leuven",
-      "awayteam": "Charleroi sc",
+      "hometeam": "Oud-Heverlee Louvain",
+      "awayteam": "Charleroi SC",
       "date": "2024-02-17",
       "time": "18:15",
       "home_odd": 2.3,
@@ -31,8 +31,8 @@
       "match_id": 3
     },
     {
-      "hometeam": "Royal antwerp fc",
-      "awayteam": "Krc mechelen",
+      "hometeam": "Royal Antwerp FC",
+      "awayteam": "KRC Malines",
       "date": "2024-02-17",
       "time": "20:45",
       "home_odd": 1.9,
@@ -41,8 +41,8 @@
       "match_id": 4
     },
     {
-      "hometeam": "Cercle brugge",
-      "awayteam": "Club brugge kv",
+      "hometeam": "Cercle Bruges",
+      "awayteam": "Club Bruges KV",
       "date": "2024-02-18",
       "time": "13:30",
       "home_odd": 4.2,
@@ -51,8 +51,8 @@
       "match_id": 5
     },
     {
-      "hometeam": "Kv cortrijk",
-      "awayteam": "R. Union saint-gilloise",
+      "hometeam": "KV Courtrai",
+      "awayteam": "R. Union Saint-Gilloise",
       "date": "2024-02-18",
       "time": "16:00",
       "home_odd": 2.9,
@@ -62,7 +62,7 @@
     },
     {
       "hometeam": "Anderlecht",
-      "awayteam": "St. trond vv",
+      "awayteam": "St. Trond VV",
       "date": "2024-02-18",
       "time": "18:30",
       "home_odd": 1.7,
@@ -71,8 +71,8 @@
       "match_id": 7
     },
     {
-      "hometeam": "Kas eupen",
-      "awayteam": "K.a.a. gent",
+      "hometeam": "KAS Eupen",
+      "awayteam": "KAA La Gantoise",
       "date": "2024-02-18",
       "time": "19:15",
       "home_odd": 2.5,

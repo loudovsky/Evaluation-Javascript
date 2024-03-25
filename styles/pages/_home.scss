@@ -1,0 +1,131 @@
+html {
+    font-family: "Varela Round", sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 85vh;
+    height: 100vh;
+    width: 200px;
+    background: linear-gradient(180deg, #5b118e 0%, #770505 98%);
+    a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    i {
+        color: #fff;
+        cursor: pointer;
+    }
+    img {
+        width: 50%;
+    }
+    &.dark {
+        background: linear-gradient(180deg, rgba(8,11,102,1) 0%, rgba(134,50,4,1) 100%);
+    }
+}
+
+.right {
+    width: 100%;
+    background: url(../images/bg1.png) bottom right / 30% no-repeat;
+    nav {
+        background-color: rgb(232, 227, 243);
+        display: inline-block;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: rgb(146, 108, 146);
+            &:hover {
+                color: rgb(73, 1, 73);
+            }
+        }
+        .foot {
+            a {
+                color: rgb(73, 1, 73);
+            }
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        div {
+            padding: 15px;
+            border-radius: 0 0 10px 0;
+            background-color: rgba(224, 202, 224, 0.338);
+        }
+        div:first-of-type {
+            background-color: rgb(253, 204, 253);
+            
+        }
+        div:nth-of-type(2) {
+            position: relative;
+            left: -5px;
+            z-index: -1;
+        }
+    }
+    .bets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .line {
+        div {
+            text-align: center;
+        }
+        display: grid;
+        grid-template-columns: 500px 50px 50px 50px;
+        grid-template-rows: 50px;
+        gap: 0 10px;
+        align-items: center;
+        .game {
+            margin-left: 30px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+
+        }
+        .button {
+            cursor: pointer;
+            border: 1px lightgray solid;
+            border-radius: 8px;
+            padding: 10px;
+            &:hover {
+                border-color: purple;
+                background-color: plum;
+            }
+        }
+        .button.purple.win {
+            border-color: purple;
+            background-color: plum;
+        }
+        
+    }
+}
+
+.your_bets {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    right: 100px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #5b118e;
+    color: #fff ;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
