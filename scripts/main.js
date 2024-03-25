@@ -4,6 +4,7 @@ const myBetsDiv = document.querySelector(".bets")
 const lines = document.querySelectorAll(".line")
 const right_section = document.querySelector(".right")
 const placedBets = document.querySelector(".content")
+const numberOfBets = document.querySelector(".nb")
 let int = 0
 
 // =============== Mes tableaux d'objets ==================
@@ -38,8 +39,13 @@ const generateRandomBackGround = () => {
 
 // affiche le récapitulatif des paris dans une petite fenêtre en bas à droite, sous la partie "Your bets"
 
+const printNumberOfBets = (tab) => {
+  numberOfBets.innerHTML = `${parseInt(tab.length)}`
+} 
+
 const printItemLine = (tab) => {
   placedBets.innerHTML = ''
+  printNumberOfBets(tab)
   if (myBets.length > 0) {
     placedBets.style.padding = "15px"
 
