@@ -15,7 +15,7 @@ body {
     gap: 85vh;
     height: 100vh;
     width: 200px;
-    background: linear-gradient(180deg, #5b118e 0%, #770505 98%);
+    background: linear-gradient(180deg, #000000 22%, #350a53 47%, #7435a1 69%, #c5b6d0 86%);
     a {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,7 @@ body {
         width: 50%;
     }
     &.dark {
-        background: linear-gradient(180deg, rgba(8,11,102,1) 0%, rgba(134,50,4,1) 100%);
+        background: linear-gradient(180deg, #292ec7 0%, #080b66 33%, #000000 57%);
     }
 }
 
@@ -119,17 +119,15 @@ body {
 
 .your_bets {
     position: absolute;
-    width: 200px;
+    width: 300px;
     bottom: 0;
     right: 100px;
     text-align: center;
-    cursor: pointer;
     background-color: #5b118e;
     color: #fff ;
     
     border-radius: 8px 8px 0 0;
     .title {
-        display: block;
         padding: 10px 0;
     }
     .content {
@@ -156,6 +154,32 @@ body {
         .calc {
             display: flex;
             justify-content: space-between;
+        }
+    }
+    .placing {
+        padding: 10px 30px;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns : 100px 70px;
+        gap: 10px 30px;
+        align-items: end;
+        color: #000;
+        * {
+            text-align: left;
+            font-size: 14px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+        &.hidden {
+            display: none;
         }
     }
 }
