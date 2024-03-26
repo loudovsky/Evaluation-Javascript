@@ -103,7 +103,7 @@ const printAllBets = (tab) => {
   placedBets.innerHTML = '' // permet de remettre l'affichage du tableau à zéro
   printNumberOfBets(tab)
   if (myBets.length > 0) {
-    placedBets.style.padding = "15px"
+    placedBets.style.padding = "15px" // permet de mettre un padding de 15px sur la section placed bets
  
     tab.forEach((tabElement, index) => {
       if (tabElement.result === "win") {
