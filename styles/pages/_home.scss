@@ -23,12 +23,22 @@ body {
     i {
         color: #fff;
         cursor: pointer;
+        display: block;
+    }
+    .fa-gear {
+        display: none;
     }
     img {
         width: 50%;
     }
     &.dark {
         background: linear-gradient(180deg, #292ec7 0%, #080b66 33%, #000000 57%);
+        .fa-moon.dark {
+            display: none;
+        }
+        .fa-gear.dark {
+            display: block;
+        }
     }
 }
 
@@ -67,10 +77,13 @@ body {
             border-radius: 0 0 10px 0;
             background-color: rgba(224, 202, 224, 0.338);
         }
-        div:first-of-type {
+        .country {
             background-color: rgb(253, 204, 253);
-            
+            &.dark {
+                background-color: #9fa1d7;
+            }
         }
+        
         div:nth-of-type(2) {
             position: relative;
             left: -5px;
@@ -82,6 +95,16 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         gap: 20px;
+    }
+    .bets.dark {
+        .button:hover {
+            border-color: #292ec7;
+            background-color: #9fa1d7;
+        }
+        .button.purple {
+            border-color: #292ec7;
+            background-color: #9fa1d7;
+        }
     }
     .line {
         div {
@@ -104,16 +127,11 @@ body {
             border: 1px lightgray solid;
             border-radius: 8px;
             padding: 10px;
-            &:hover {
+            &:hover, &.purple {
                 border-color: purple;
                 background-color: plum;
             }
-        }
-        .purple {
-            border-color: purple;
-            background-color: plum;
-        }
-        
+        }  
     }
 }
 
@@ -125,6 +143,9 @@ body {
     text-align: center;
     background-color: #5b118e;
     color: #fff ;
+    &.dark {
+        background-color: #080b66;
+    }
     
     border-radius: 8px 8px 0 0;
     .title {
@@ -134,11 +155,14 @@ body {
         box-sizing: border-box;
         background: #fff;
         width: 100%;
+        overflow-y: auto;
+        max-height: 250px;
         color: #000;
         display: flex;
         flex-direction: column;
         padding: 0px;
         gap: 20px;
+
         .single-line {
             display: flex;
             flex-direction: column;
@@ -154,6 +178,11 @@ body {
         .calc {
             display: flex;
             justify-content: space-between;
+        }
+        .bin {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
         }
     }
     .placing {
